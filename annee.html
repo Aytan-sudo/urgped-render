@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Urgences pédiatriques — comparaison annuelle</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Urgences pédiatriques CHUSE</h1>
+      <span class="period" id="period">Chargement…</span>
+      <nav>
+        <a href="./index.html">30 jours</a>
+        <a href="./annee.html" class="active">Année</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="toggle" id="mode-toggle">
+      <button data-mode="civile" class="active">Année civile</button>
+      <button data-mode="saison">Saison hivernale</button>
+    </div>
+
+    <div class="card full">
+      <h2>Activité — comparaison inter-annuelle (moyenne mobile 14 j)</h2>
+      <div class="chart-wrap"><canvas id="chart-yearly"></canvas></div>
+    </div>
+
+    <div class="card full">
+      <div class="card-head">
+        <h2>Cumul annuel des passages</h2>
+        <div class="toggle small" id="cumul-toggle">
+          <button data-vue="cumul" class="active">Cumul absolu</button>
+          <button data-vue="ecart">Écart à la référence</button>
+        </div>
+      </div>
+      <div class="chart-wrap"><canvas id="chart-cumul"></canvas></div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Taux de reconsultation J3 par année</h2>
+        <div class="chart-wrap"><canvas id="chart-reconsult"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Taux d'hospitalisation par année</h2>
+        <div class="chart-wrap"><canvas id="chart-hospit"></canvas></div>
+      </div>
+    </div>
+
+    <div class="card full">
+      <h2>Synthèse annuelle</h2>
+      <div id="table-annuelle"></div>
+      <p class="note">La première période (2018, partielle) est masquée. La période en cours est encore incomplète. Cohortes &lt; 3 mois / &lt; 2 ans : se recoupent (la première est incluse dans la seconde).</p>
+    </div>
+  </main>
+
+  <footer>
+    <p id="generated"></p>
+    <p>Données agrégées — source : CHU de Saint-Étienne — Pr Aymeric Cantais</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <script src="./assets/app.js"></script>
+  <script>initPage2();</script>
+</body>
+</html>
