@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Urgences pédiatriques — 30 derniers jours</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Urgences pédiatriques CHUSE</h1>
+      <span class="period" id="period">Chargement…</span>
+      <nav>
+        <a href="./index.html" class="active">30 jours</a>
+        <a href="./annee.html">Année</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="toggle" id="strate-toggle">
+      <button data-strate="Tous" class="active">Tous</button>
+      <button data-strate="Médecine">Médecine</button>
+      <button data-strate="Chirurgie">Chirurgie</button>
+      <button data-strate="Réorienté">Réorienté</button>
+    </div>
+    <p class="note" style="margin:-.6rem 0 1rem">La stratification s'applique aux indicateurs de profil et à l'histogramme des passages (secteur choisi mis en avant) ; la reconsultation J3 reste globale.</p>
+
+    <section class="kpis" id="kpis"></section>
+
+    <div class="card full">
+      <h2>Passages par jour (30 derniers jours)</h2>
+      <div class="chart-wrap"><canvas id="chart-passages"></canvas></div>
+      <div class="legend" id="legend-passages"></div>
+      <p class="note" id="note-passages"></p>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Reconsultation J3 — taux quotidien lissé (30 j)</h2>
+        <div class="chart-wrap"><canvas id="chart-reconsult-30"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Répartition par créneau horaire</h2>
+        <div class="chart-wrap"><canvas id="chart-creneaux"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Volume et taux d'hospitalisation par niveau de tri</h2>
+        <div class="chart-wrap"><canvas id="chart-tri"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Examens réalisés (% des passages)</h2>
+        <div class="chart-wrap"><canvas id="chart-examens"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Hospitalisations <span class="total" id="total-services"></span></h2>
+        <div class="chart-wrap"><canvas id="chart-services"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Réorientations <span class="total" id="total-reorient"></span></h2>
+        <div class="chart-wrap"><canvas id="chart-reorient"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Répartition par tranche d'âge</h2>
+        <div class="chart-wrap"><canvas id="chart-age"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Cohortes à surveiller</h2>
+        <div class="mini-stats" id="surveillance" style="margin-top:1.5rem"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p id="generated"></p>
+    <p>Données agrégées — source : CHU de Saint-Étienne — Pr Aymeric Cantais</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+  <script src="./assets/app.js"></script>
+  <script>initPage1();</script>
+</body>
+</html>
