@@ -1,0 +1,738 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "generated_at": "2026-10-16T19:34:48+00:00",
+    "window_days": 30,
+    "start": "2026-09-16",
+    "end": "2026-10-15",
+    "n_passages": 3434,
+    "strates": [
+      "Tous",
+      "Médecine",
+      "Chirurgie",
+      "Réorienté"
+    ],
+    "min_cell": 5
+  },
+  "strates": {
+    "Tous": {
+      "n": 3434,
+      "kpi": {
+        "passages_jour_moy": {
+          "val": 114.5,
+          "n": 3434,
+          "delta_pct": 29.3
+        },
+        "ds_med_h": {
+          "val": 2.41,
+          "n": null,
+          "delta_pct": -8.4
+        },
+        "taux_hospit": {
+          "val": 0.0696,
+          "n": 239,
+          "delta_pct": -18.9
+        },
+        "taux_uhcd": {
+          "val": 0.127,
+          "n": 436,
+          "delta_pct": -8.1
+        },
+        "taux_reorient": {
+          "val": 0.1995,
+          "n": 685,
+          "delta_pct": -1.7
+        },
+        "taux_reconsult_j3": {
+          "val": 0.0451,
+          "n": 155,
+          "delta_pct": 3.3
+        }
+      },
+      "creneaux": {
+        "matin": 882,
+        "apresmidi": 1358,
+        "N1": 904,
+        "N2": 290
+      },
+      "par_tri": [
+        {
+          "tri": "G1",
+          "n": 6,
+          "ds_med_h": 2.77,
+          "taux_hospit": 1.0
+        },
+        {
+          "tri": "G2",
+          "n": 166,
+          "ds_med_h": 3.51,
+          "taux_hospit": 0.3916
+        },
+        {
+          "tri": "G3",
+          "n": 751,
+          "ds_med_h": 3.34,
+          "taux_hospit": 0.1385
+        },
+        {
+          "tri": "G4",
+          "n": 1908,
+          "ds_med_h": 2.45,
+          "taux_hospit": 0.0314
+        },
+        {
+          "tri": "G5",
+          "n": 589,
+          "ds_med_h": 0.56,
+          "taux_hospit": 0.0068
+        }
+      ],
+      "services_hospit": [
+        {
+          "service": "PED C",
+          "n": 108
+        },
+        {
+          "service": "PED B",
+          "n": 51
+        },
+        {
+          "service": "CHIR PED",
+          "n": 34
+        },
+        {
+          "service": "REA PED",
+          "n": 23
+        },
+        {
+          "service": "PEDOPSY",
+          "n": 8
+        },
+        {
+          "service": "BLOC PED",
+          "n": 8
+        },
+        {
+          "service": "ONCO PED",
+          "n": 5
+        }
+      ],
+      "examens": [
+        {
+          "exam": "Radio pulmonaire",
+          "n": 113,
+          "pct": 0.0329
+        },
+        {
+          "exam": "Échographie",
+          "n": 134,
+          "pct": 0.039
+        },
+        {
+          "exam": "NFS",
+          "n": 313,
+          "pct": 0.0911
+        },
+        {
+          "exam": "CRP capillaire",
+          "n": 48,
+          "pct": 0.014
+        },
+        {
+          "exam": "TDR",
+          "n": 0,
+          "pct": 0.0
+        }
+      ],
+      "reorientation": [
+        {
+          "motif": "Maison Médicale MG",
+          "n": 320
+        },
+        {
+          "motif": "Réorientation SAS",
+          "n": 270
+        },
+        {
+          "motif": "AUTRES",
+          "n": 95
+        }
+      ],
+      "age": [
+        {
+          "tranche": "< 1 mois",
+          "n": 65
+        },
+        {
+          "tranche": "1-3 mois",
+          "n": 119
+        },
+        {
+          "tranche": "3 mois-2 ans",
+          "n": 652
+        },
+        {
+          "tranche": "2-6 ans",
+          "n": 795
+        },
+        {
+          "tranche": "6-12 ans",
+          "n": 964
+        },
+        {
+          "tranche": "12-15 ans",
+          "n": 564
+        },
+        {
+          "tranche": "15-18+ ans",
+          "n": 275
+        }
+      ],
+      "age_surveillance": {
+        "<1 mois": {
+          "n": 65,
+          "pct": 0.0189
+        },
+        "<3 mois": {
+          "n": 184,
+          "pct": 0.0536
+        },
+        "<2 ans": {
+          "n": 836,
+          "pct": 0.2434
+        },
+        ">15 ans": {
+          "n": 275,
+          "pct": 0.0801
+        }
+      },
+      "uhcd": {
+        "n": 436,
+        "taux": 0.127,
+        "ds_med_h": 4.93
+      }
+    },
+    "Médecine": {
+      "n": 1330,
+      "kpi": {
+        "passages_jour_moy": {
+          "val": 44.3,
+          "n": 1330,
+          "delta_pct": 26.7
+        },
+        "ds_med_h": {
+          "val": 3.25,
+          "n": null,
+          "delta_pct": -7.9
+        },
+        "taux_hospit": {
+          "val": 0.1421,
+          "n": 189,
+          "delta_pct": -7.9
+        },
+        "taux_uhcd": {
+          "val": 0.2451,
+          "n": 326,
+          "delta_pct": -0.6
+        },
+        "taux_reorient": {
+          "val": 0.0,
+          "n": 0,
+          "delta_pct": null
+        },
+        "taux_reconsult_j3": {
+          "val": 0.0368,
+          "n": 49,
+          "delta_pct": -22.6
+        }
+      },
+      "creneaux": {
+        "matin": 321,
+        "apresmidi": 449,
+        "N1": 352,
+        "N2": 208
+      },
+      "par_tri": [
+        {
+          "tri": "G1",
+          "n": 5,
+          "ds_med_h": 2.55,
+          "taux_hospit": 1.0
+        },
+        {
+          "tri": "G2",
+          "n": 93,
+          "ds_med_h": 3.92,
+          "taux_hospit": 0.5699
+        },
+        {
+          "tri": "G3",
+          "n": 485,
+          "ds_med_h": 3.81,
+          "taux_hospit": 0.1773
+        },
+        {
+          "tri": "G4",
+          "n": 684,
+          "ds_med_h": 3.09,
+          "taux_hospit": 0.0599
+        },
+        {
+          "tri": "G5",
+          "n": 63,
+          "ds_med_h": 2.18,
+          "taux_hospit": 0.0635
+        }
+      ],
+      "services_hospit": [
+        {
+          "service": "PED C",
+          "n": 100
+        },
+        {
+          "service": "PED B",
+          "n": 44
+        },
+        {
+          "service": "REA PED",
+          "n": 22
+        },
+        {
+          "service": "PEDOPSY",
+          "n": 8
+        },
+        {
+          "service": "CHIR PED",
+          "n": 5
+        },
+        {
+          "service": "ONCO PED",
+          "n": 5
+        },
+        {
+          "service": "AUTRES",
+          "n": 3
+        }
+      ],
+      "examens": [
+        {
+          "exam": "Radio pulmonaire",
+          "n": 102,
+          "pct": 0.0767
+        },
+        {
+          "exam": "Échographie",
+          "n": 67,
+          "pct": 0.0504
+        },
+        {
+          "exam": "NFS",
+          "n": 263,
+          "pct": 0.1977
+        },
+        {
+          "exam": "CRP capillaire",
+          "n": 31,
+          "pct": 0.0233
+        },
+        {
+          "exam": "TDR",
+          "n": 0,
+          "pct": 0.0
+        }
+      ],
+      "reorientation": [],
+      "age": [
+        {
+          "tranche": "< 1 mois",
+          "n": 55
+        },
+        {
+          "tranche": "1-3 mois",
+          "n": 111
+        },
+        {
+          "tranche": "3 mois-2 ans",
+          "n": 338
+        },
+        {
+          "tranche": "2-6 ans",
+          "n": 297
+        },
+        {
+          "tranche": "6-12 ans",
+          "n": 230
+        },
+        {
+          "tranche": "12-15 ans",
+          "n": 163
+        },
+        {
+          "tranche": "15-18+ ans",
+          "n": 136
+        }
+      ],
+      "age_surveillance": {
+        "<1 mois": {
+          "n": 55,
+          "pct": 0.0414
+        },
+        "<3 mois": {
+          "n": 166,
+          "pct": 0.1248
+        },
+        "<2 ans": {
+          "n": 504,
+          "pct": 0.3789
+        },
+        ">15 ans": {
+          "n": 136,
+          "pct": 0.1023
+        }
+      },
+      "uhcd": {
+        "n": 326,
+        "taux": 0.2451,
+        "ds_med_h": 5.33
+      }
+    },
+    "Chirurgie": {
+      "n": 1416,
+      "kpi": {
+        "passages_jour_moy": {
+          "val": 47.2,
+          "n": 1416,
+          "delta_pct": 33.0
+        },
+        "ds_med_h": {
+          "val": 2.57,
+          "n": null,
+          "delta_pct": -7.6
+        },
+        "taux_hospit": {
+          "val": 0.0353,
+          "n": 50,
+          "delta_pct": -42.1
+        },
+        "taux_uhcd": {
+          "val": 0.077,
+          "n": 109,
+          "delta_pct": -21.9
+        },
+        "taux_reorient": {
+          "val": 0.0,
+          "n": 0,
+          "delta_pct": null
+        },
+        "taux_reconsult_j3": {
+          "val": 0.0473,
+          "n": 67,
+          "delta_pct": 73.8
+        }
+      },
+      "creneaux": {
+        "matin": 379,
+        "apresmidi": 645,
+        "N1": 356,
+        "N2": 36
+      },
+      "par_tri": [
+        {
+          "tri": "G1",
+          "n": 1,
+          "ds_med_h": 3.0,
+          "taux_hospit": 1.0
+        },
+        {
+          "tri": "G2",
+          "n": 71,
+          "ds_med_h": 2.98,
+          "taux_hospit": 0.169
+        },
+        {
+          "tri": "G3",
+          "n": 264,
+          "ds_med_h": 2.76,
+          "taux_hospit": 0.0682
+        },
+        {
+          "tri": "G4",
+          "n": 966,
+          "ds_med_h": 2.54,
+          "taux_hospit": 0.0197
+        },
+        {
+          "tri": "G5",
+          "n": 114,
+          "ds_med_h": 2.35,
+          "taux_hospit": 0.0
+        }
+      ],
+      "services_hospit": [
+        {
+          "service": "CHIR PED",
+          "n": 29
+        },
+        {
+          "service": "PED C",
+          "n": 8
+        },
+        {
+          "service": "PED B",
+          "n": 7
+        },
+        {
+          "service": "BLOC PED",
+          "n": 5
+        },
+        {
+          "service": "AUTRES",
+          "n": 1
+        }
+      ],
+      "examens": [
+        {
+          "exam": "Radio pulmonaire",
+          "n": 11,
+          "pct": 0.0078
+        },
+        {
+          "exam": "Échographie",
+          "n": 67,
+          "pct": 0.0473
+        },
+        {
+          "exam": "NFS",
+          "n": 50,
+          "pct": 0.0353
+        },
+        {
+          "exam": "CRP capillaire",
+          "n": 17,
+          "pct": 0.012
+        },
+        {
+          "exam": "TDR",
+          "n": 0,
+          "pct": 0.0
+        }
+      ],
+      "reorientation": [],
+      "age": [
+        {
+          "tranche": "< 1 mois",
+          "n": 5
+        },
+        {
+          "tranche": "1-3 mois",
+          "n": 5
+        },
+        {
+          "tranche": "3 mois-2 ans",
+          "n": 103
+        },
+        {
+          "tranche": "2-6 ans",
+          "n": 320
+        },
+        {
+          "tranche": "6-12 ans",
+          "n": 573
+        },
+        {
+          "tranche": "12-15 ans",
+          "n": 343
+        },
+        {
+          "tranche": "15-18+ ans",
+          "n": 67
+        }
+      ],
+      "age_surveillance": {
+        "<1 mois": {
+          "n": 5,
+          "pct": 0.0035
+        },
+        "<3 mois": {
+          "n": 10,
+          "pct": 0.0071
+        },
+        "<2 ans": {
+          "n": 113,
+          "pct": 0.0798
+        },
+        ">15 ans": {
+          "n": 67,
+          "pct": 0.0473
+        }
+      },
+      "uhcd": {
+        "n": 109,
+        "taux": 0.077,
+        "ds_med_h": 4.23
+      }
+    },
+    "Réorienté": {
+      "n": 685,
+      "kpi": {
+        "passages_jour_moy": {
+          "val": 22.8,
+          "n": 685,
+          "delta_pct": 27.1
+        },
+        "ds_med_h": {
+          "val": 0.43,
+          "n": null,
+          "delta_pct": -4.4
+        },
+        "taux_hospit": {
+          "val": 0.0,
+          "n": 0,
+          "delta_pct": -100.0
+        },
+        "taux_uhcd": {
+          "val": 0.0,
+          "n": 0,
+          "delta_pct": -100.0
+        },
+        "taux_reorient": {
+          "val": 1.0,
+          "n": 685,
+          "delta_pct": 0.0
+        },
+        "taux_reconsult_j3": {
+          "val": 0.0015,
+          "n": 1,
+          "delta_pct": -80.3
+        }
+      },
+      "creneaux": {
+        "matin": 182,
+        "apresmidi": 264,
+        "N1": 193,
+        "N2": 46
+      },
+      "par_tri": [
+        {
+          "tri": "G2",
+          "n": 2,
+          "ds_med_h": 1.63,
+          "taux_hospit": 0.0
+        },
+        {
+          "tri": "G3",
+          "n": 1,
+          "ds_med_h": 0.51,
+          "taux_hospit": 0.0
+        },
+        {
+          "tri": "G4",
+          "n": 258,
+          "ds_med_h": 0.45,
+          "taux_hospit": 0.0
+        },
+        {
+          "tri": "G5",
+          "n": 410,
+          "ds_med_h": 0.42,
+          "taux_hospit": 0.0
+        }
+      ],
+      "services_hospit": [],
+      "examens": [
+        {
+          "exam": "Radio pulmonaire",
+          "n": 0,
+          "pct": 0.0
+        },
+        {
+          "exam": "Échographie",
+          "n": 0,
+          "pct": 0.0
+        },
+        {
+          "exam": "NFS",
+          "n": 0,
+          "pct": 0.0
+        },
+        {
+          "exam": "CRP capillaire",
+          "n": 0,
+          "pct": 0.0
+        },
+        {
+          "exam": "TDR",
+          "n": 0,
+          "pct": 0.0
+        }
+      ],
+      "reorientation": [
+        {
+          "motif": "Maison Médicale MG",
+          "n": 320
+        },
+        {
+          "motif": "Réorientation SAS",
+          "n": 270
+        },
+        {
+          "motif": "AUTRES",
+          "n": 95
+        }
+      ],
+      "age": [
+        {
+          "tranche": "< 1 mois",
+          "n": 5
+        },
+        {
+          "tranche": "1-3 mois",
+          "n": 3
+        },
+        {
+          "tranche": "3 mois-2 ans",
+          "n": 209
+        },
+        {
+          "tranche": "2-6 ans",
+          "n": 177
+        },
+        {
+          "tranche": "6-12 ans",
+          "n": 161
+        },
+        {
+          "tranche": "12-15 ans",
+          "n": 58
+        },
+        {
+          "tranche": "15-18+ ans",
+          "n": 72
+        }
+      ],
+      "age_surveillance": {
+        "<1 mois": {
+          "n": 5,
+          "pct": 0.0073
+        },
+        "<3 mois": {
+          "n": 8,
+          "pct": 0.0117
+        },
+        "<2 ans": {
+          "n": 217,
+          "pct": 0.3168
+        },
+        ">15 ans": {
+          "n": 72,
+          "pct": 0.1051
+        }
+      },
+      "uhcd": {
+        "n": 0,
+        "taux": 0.0,
+        "ds_med_h": null
+      }
+    }
+  }
+}
